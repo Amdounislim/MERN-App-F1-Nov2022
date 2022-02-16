@@ -1,8 +1,11 @@
 const express = require('express')
 const connectDB = require('./config/connectDB')
+const cors = require('cors')
 
 
 const app = express()
+
+app.use(cors())
 
 // 4 - parse data
 app.use(express.json())
